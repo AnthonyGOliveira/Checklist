@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/check-list.css">
+        <title>Check-List</title>
+    </head>
+    <body>
+        <div class ="content">
+            <form action="">
+                <h1>Tarefas diárias</h1>
+                <fieldset>
+                    <legend>
+                        <h2>Informações da Tarefa<span></span></h2>
+                    </legend>
+                    <div class="boxes">
+                        <div class="box">
+                            <label for="name">Tarefa</label>
+                            <input type="text" name="name" value="" required placeholder="Descrição da Tarefa">
+                        </div>
+                        <div class="box">
+                            <label for="time">Data da tarefa:</label>
+                            <input type="date" name="date" required>    
+                        </div>
+                        <div class="box">
+                            <button onclick="tarefaController.adiciona(event)" type="submit">Adicionar Tarefa</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="table-tasks" id="table-tasks" value="">
+                
+            </div>
+        </div>
+        <script src="js/app/controllers/TarefaController.js"></script>
+        <script src="js/app/models/Tarefa.js"></script>
+        <script src="js/app/models/ListaTarefas.js"></script>
+        <script src="js/app/models/Mensagem.js"></script>
+        <script src="js/app/views/View.js"></script>
+        <script src="js/app/views/MensagemView.js"></script>
+        <script src="js/app/views/TarefaView.js"></script>
+        <Script src="js/app/helpers/DateHelper.js"></Script>
+        <Script src="js/app/services/ConnectionFactory.js"></Script>
+        <Script src="js/app/dao/TarefaDao.js"></Script>
+        <Script src="js/app/services/TarefaService.js"></Script>
+        <script>
+            let tarefaController = new TarefaController();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,113 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+form{
+    background-color:  #1C1C1C;
+    color: white;
+    width: 900px;
+    max-width: 1100px;
+    margin: 3em auto 0 auto;
+    padding: 1em;
+    border-radius: 2em;
+}
+
+form fieldset{
+    border: 0;
+}
+
+form h1{
+    text-align: center;
+}
+
+form legend {
+    width: 100%;
+}
+
+form legend h2{
+    text-align: center;
+}
+
+form .boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+}
+
+form .box{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+form label{
+    padding: 1em;
+    font-size: 1.2em;;
+}
+
+form input,
+form button{
+    font-size: 1.3em;
+    padding: 0.7em;
+    margin-bottom: 1.9em;
+    border: 0;
+    border-radius: 1em;
+    outline: none;
+}
+
+form input[type="time"]{
+    width: 45%;
+    margin-left: 10%;
+    text-align: center;
+
+}
+
+form .box-submit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form button{
+    margin-top: 3em;
+}
+
+.table-tasks{
+    width: 900px;
+    margin: 0 auto;
+}
+
+.table-tasks h2{
+    font-size: 2em;
+    color: black;
+    text-align: center;
+}
+
+.table-tasks .table{
+    font-size: 2em;
+    color: teal;
+    width: 100%;
+    padding: 1em;
+    text-align: left;
+}
+
+.table-tasks .table tr {
+    margin-top: 1rem;
+}
+
+.table-tasks .table input[type=checkbox] {
+    text-align: center;
+    font-size: 5rem;
+    width: 30px;
+    height: 30px;
+    margin-left: 5rem;
+}
+
+.hide{
+    display: none;
+}
